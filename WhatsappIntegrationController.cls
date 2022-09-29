@@ -2,7 +2,7 @@ public class WhatsappIntegrationController {
     
     @AuraEnabled
     public static void sendWAMessage( String message){
-        //String contactNumber='917310012248';
+        //String contactNumber='918408053328';
         requestController(message);
         
     }
@@ -17,7 +17,6 @@ public class WhatsappIntegrationController {
         String body='{"messaging_product":"whatsapp","to":"918408053328","text":{"body":"'+messageBody+'"}}';
         
         req.setHeader('Authorization', 'Bearer '+apiKey);
-        //req.setHeader('Content-Type', 'multipart/form-data; boundary=' + boundary);
         req.setBody(body);
         HttpResponse response= new HttpResponse();
         response=h.send(req);
