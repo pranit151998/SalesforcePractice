@@ -1,4 +1,4 @@
-public class WhatsappIntegrationController {
+public class SalesforceToWhatsappIntegrationController {
     
     @AuraEnabled
     public static void sendWAMessage( String message){
