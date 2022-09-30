@@ -9,7 +9,7 @@ export default class SendMessage extends LightningElement {
 
         sendWAMessage({message:this.message}).then(result=>{
             console.log('Message Sent');
-            console.log(this.message);
+            
         })
 
     }
